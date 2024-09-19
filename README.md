@@ -51,14 +51,9 @@ fun HelloContent() {
     }
 }
 ```
-
-#### Important Considerations
-
 - **Avoid using mutable objects** like `ArrayList<T>` or `mutableListOf()` as state in Compose. These are not observable by Compose and won't trigger recompositions when they change, which may lead to stale data in your app.
   
   Instead, use an observable data holder like `State<List<T>>` and an immutable list like `listOf()`.
-
-#### State Equality Policies
 
 You can specify a policy to determine how state values are compared for equality:
 
