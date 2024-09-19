@@ -65,3 +65,7 @@ You can specify a policy to determine how state values are compared for equality
    
 3. **`neverEqualPolicy`**  
    Treats values as never equivalent, ensuring the state is always considered changed.
+
+### 2. What is `remember`?
+In Jetpack Compose, `remember` is a composable function used to store an object's state across recompositions. This helps avoid unnecessary recalculations and ensures that the state is preserved during UI updates.  For more details, you can read [this article](https://medium.com/androiddevelopers/under-the-hood-of-jetpack-compose-part-2-of-2-37b2c20c6cdd).
+
